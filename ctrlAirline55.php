@@ -9,7 +9,7 @@ class ctrlAirline extends clsControllerBase
         $this->template->show("visAirline.php");
     }
 
-    public function getAllAirlines() {
+    public function nuevaFunc() {
         include ROOT_PATH.DS.'mvc'.DS.'modelos'.DS.'modAirline.php';
         $obj = new clsModAirline();
         //$rows = $obj->get()->fetchAll();
