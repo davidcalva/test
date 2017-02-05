@@ -38,12 +38,10 @@ class ctrlAirline extends clsControllerBase
         include ROOT_PATH.DS.'mvc'.DS.'modelos'.DS.'modAirline.php';
         $obj = new clsModAirline();
         $obj->idAirline  = $_POST['idAirline'];
-
         echo json_encode($obj->deleteAirline()->fetchAll()); 
-             
     }
-
-    function convertUTF8($data){
+    /**Cambios sSSS*/
+    public function convertUTF8($data){
         return utf8_encode($data);
     }
 }
